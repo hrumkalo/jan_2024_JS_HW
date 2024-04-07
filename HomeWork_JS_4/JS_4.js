@@ -18,7 +18,7 @@ function exchange(sumUAH, currencyValues, exchangeCurrency) {
         }
     }
     // Якщо валюта для обміну не знайдена
-    document.write('Currency not available for exchange');
+    document.write('Currency not available for exchange. Please choose, and write "USD" or "EURO"');
 }
 
 // Виклик функції та виведення результату
