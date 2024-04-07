@@ -1,10 +1,7 @@
 //------------------------------------------------------4/13------------------------------------------------------
 
 let currencyForExchange = prompt('If you have 1 000 UAH, you can exchange USD or EURO. Which currency do you want exchange?');
-let weHave = [
-    {currency: 'USD', value: 40},
-    {currency: 'EUR', value: 42}
-];
+let weHave = [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}];
 
 if (currencyForExchange === 'USD' || currencyForExchange === 'EURO') {
     document.write('Let`s exchange ');
