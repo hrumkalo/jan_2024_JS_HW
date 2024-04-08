@@ -1,7 +1,7 @@
 //------------------------------------------------------4/13------------------------------------------------------
 
 let currencyForExchange = prompt('If you have 1 000 UAH, you can exchange USD or EURO. Which currency do you want exchange?');
-let weHave = [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}];
+let weHave = [{currency: 'USD', value: 40}, {currency: 'EURO', value: 42}];
 
 if (currencyForExchange === 'USD' || currencyForExchange === 'EURO') {
     document.write('Let`s exchange your money');
@@ -27,6 +27,13 @@ function exchange(sumUAH, currencyValues, exchangeCurrency) {
     let newCurrency = prompt('Currency not available for exchange. Please choose, and write "USD" or "EURO"');
     return exchange(sumUAH, currencyValues, newCurrency);
 }
+
 // Виклик функції та виведення результату
-let result = exchange(1000, weHave, currencyForExchange);
-console.log(result);
+let currencyForExchangeUSD = 'USD'; // Валюта для обміну
+let resultUSD = exchange(1000, weHave, currencyForExchangeUSD);
+console.log(resultUSD);
+
+// Виклик функції та виведення результату для обміну на EUR
+let currencyForExchangeEURO = 'EURO'; // Валюта для обміну
+let resultEURO = exchange(1000, weHave, currencyForExchangeEURO);
+console.log(resultEURO);
