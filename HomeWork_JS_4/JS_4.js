@@ -37,3 +37,7 @@ console.log(resultUSD);
 let currencyForExchangeEURO = 'EURO'; // Валюта для обміну
 let resultEURO = exchange(1000, weHave, currencyForExchangeEURO);
 console.log(resultEURO);
+
+//Трохи щось не то. Хотіла по окремості, а воно попідряд виводить, як і долари, так і євро.
+
+
