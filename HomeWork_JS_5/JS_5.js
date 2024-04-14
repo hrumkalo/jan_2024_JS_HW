@@ -5,14 +5,9 @@
 
 //------------------------------------------------------5/2------------------------------------------------------
 
-// function circleR(radius){
-//     return 3.14 * radius * radius;
-// }
-// document.write(circleR(25));
-
-const circleR = (radius = 10) => { return 3.14 * radius * radius; }
-document.write(circleR(radius));
-
+// let numOfRadius = {radius: 10};
+// const circleR = (radius) => { return 3.14 * radius * radius; }
+// document.write(circleR(numOfRadius.radius));
 
 
 
