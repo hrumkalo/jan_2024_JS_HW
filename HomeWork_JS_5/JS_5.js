@@ -103,59 +103,61 @@
 // document.write(lessNumber(listOfNumber));
 
 //------------------------------------------------------5/11------------------------------------------------------
+
+// let numberExist = [1, 2, 10];
 //
+// function sum(arr) {
+//     let sum = 0;
+//     for (const item of arr) {
+//         sum = sum + item;
+//     }
+//     return sum;
+// }
+// console.log(sum(numberExist));
 
 //------------------------------------------------------5/12------------------------------------------------------
-//
 
-//------------------------------------------------------5/13------------------------------------------------------
-//
-
-//------------------------------------------------------5/14------------------------------------------------------
-//
-
-
-
-
-
+// const swap = (arr, index1, index2) => {
+//     let num = arr[index1];
+//     arr[index1] = arr[index2];
+//     arr[index2] = num;
+//     return arr; // Повертаємо масив
+// }
+// const Pereprysvoinnia = swap([11, 22, 33, 44], 1, 2);
+// document.write(Pereprysvoinnia);
 
 
 //------------------------------------------------------4/13------------------------------------------------------
 
-// let currencyForExchange = prompt('If you have 1 000 UAH, you can exchange USD or EURO. Which currency do you want exchange?');
-// let weHave = [{currency: 'USD', value: 40}, {currency: 'EURO', value: 42}];
+// const currencyForExchange = prompt('If you have 1 000 UAH, you can exchange USD or EURO. Which currency do you want exchange?');
+// const weHave = [{currency: 'USD', value: 40}, {currency: 'EURO', value: 42}];
 //
 // if (currencyForExchange === 'USD' || currencyForExchange === 'EURO') {
 //     document.write('Let`s exchange your money');
 // } else {
 //     document.write('Please choose, and write "USD" or "EURO"');
 // }
-// function exchange(sumUAH, currencyValues, exchangeCurrency) {
-//     let sumUA = 1000;
+//
+// const exchange = (sumUAH, currencyValues, exchangeCurrency) => {
+//     const sumUA = 1000;
 //     for (const item of currencyValues) {
 //         if (item.currency === exchangeCurrency) {
-//             if (exchangeCurrency === 'USD') {
-//                 let exchangedSum = sumUAH / item.value;
-//                 console.log('Let`s exchange to USD');
-//                 return exchangedSum;
-//             } else if (exchangeCurrency === 'EURO') {
-//                 let exchangedSum = sumUAH / item.value;
-//                 console.log('Let`s exchange to EURO');
-//                 return exchangedSum;
-//             }
+//             let exchangedSum = sumUAH / item.value;
+//             console.log(`Let's exchange to ${exchangeCurrency}`);
+//             return exchangedSum;
 //         }
 //     }
 //     // Повторне введення валюти, якщо валюта для обміну не знайдена
-//     let newCurrency = prompt('Currency not available for exchange. Please choose, and write "USD" or "EURO"');
+//     const newCurrency = prompt('Currency not available for exchange. Please choose, and write "USD" or "EURO"');
 //     return exchange(sumUAH, currencyValues, newCurrency);
 // }
 //
 // // Виклик функції та виведення результату
-// let currencyForExchangeUSD = 'USD'; // Валюта для обміну
-// let resultUSD = exchange(1000, weHave, currencyForExchangeUSD);
+// const currencyForExchangeUSD = 'USD'; // Валюта для обміну
+// const resultUSD = exchange(1000, weHave, currencyForExchangeUSD);
 // console.log(resultUSD);
 //
 // // Виклик функції та виведення результату для обміну на EUR
-// let currencyForExchangeEURO = 'EURO'; // Валюта для обміну
-// let resultEURO = exchange(1000, weHave, currencyForExchangeEURO);
+// const currencyForExchangeEURO = 'EURO'; // Валюта для обміну
+// const resultEURO = exchange(1000, weHave, currencyForExchangeEURO);
 // console.log(resultEURO);
