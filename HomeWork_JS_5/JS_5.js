@@ -9,13 +9,28 @@
 // const circleR = (radius) => { return 3.14 * radius * radius; }
 // document.write(circleR(numOfRadius.radius));
 
+//------------------------------------------------------5/3------------------------------------------------------
 
+//Повна площа поверхні циліндра : S = 2 πr (h + r)
 
+// let weHaveSomeNum = {radius: 25, height: 100};
+// const Scylinder = (obj) => { return 2 * 3.14 * obj.radius * (obj.height + obj.radius); }
+// document.write(Scylinder(weHaveSomeNum));
 
+//------------------------------------------------------5/4------------------------------------------------------
+// створити функцію яка приймає масив та виводить кожен його елемент
 
+// let listOfItems = [' html', ' css', ' javascript', ' mysql', ' mongodb', ' react', ' angular', ' node.js'];
+// ArrayElements = (array) => {
+//     array.forEach(element => console.log(element));
+// }
+// ArrayElements(listOfItems);
 
+//------------------------------------------------------5/6------------------------------------------------------
+// створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-
+const SomeText = (text) => {document.write(`<p>${text}</p>`);}
+SomeText("Welcome to my page");
 
 
 //------------------------------------------------------4/13------------------------------------------------------
