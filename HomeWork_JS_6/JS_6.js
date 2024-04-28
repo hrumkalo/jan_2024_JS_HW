@@ -124,22 +124,18 @@
 // - всі червоні карти
 // - всі буби
 // - всі трефи від 9 та більше
-//
-// - cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
-// - value: '', // '6'-'10', 'ace','jack','queen','king','joker'
-// - color:'', // 'red','black'
 
 let SixtySix = [
-    { title: 'Hearts', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'red'}, // ♥ чирва
-    { title: 'Diamonds', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'red'}, // ♦ бубна
-    { title: 'Spades', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'black'}, // ♠ піка
-    { title: 'Clubs', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'black'} // ♣ трефа
+    { cardSuit: 'Hearts', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'red'}, // ♥ чирва
+    { cardSuit: 'Diamonds', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'red'}, // ♦ бубна
+    { cardSuit: 'Spades', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'black'}, // ♠ піка
+    { cardSuit: 'Clubs', cardsRanked: ['6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'], color: 'black'} // ♣ трефа
 ];
 console.log(SixtySix);
 
 // - знайти піковий туз
 
-let aceOfSpades = SixtySix.filter(card => card.title === 'Spades' && card.cardsRanked.includes('Ace'));
+let aceOfSpades = SixtySix.filter(card => card.cardSuit === 'Spades' && card.cardsRanked.includes('Ace'));
 console.log(aceOfSpades);
 
 
