@@ -137,6 +137,12 @@ let SixtySix = [
 ];
 console.log(SixtySix);
 
+// - знайти піковий туз
+
+let aceOfSpades = SixtySix.filter(card => card.title === 'Spades' && card.cardsRanked.includes('Ace'));
+console.log(aceOfSpades);
+
+
 
 
 
