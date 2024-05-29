@@ -138,7 +138,7 @@ console.log(SixtySix);
 let aceOfSpades = SixtySix.filter(card => card.cardSuit === 'Spades' && card.cardsRanked.includes('Ace'));
 console.log(aceOfSpades);
 
-
+  
 
 
 
